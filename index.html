@@ -48,7 +48,7 @@
     .hero-overlay { position:absolute; inset:0; background:linear-gradient(to right,rgba(18,32,24,.78) 0%,rgba(18,32,24,.45) 52%,rgba(18,32,24,.08) 100%); }
     .hero-content { position:absolute; top:50%; left:0; right:0; transform:translateY(-50%); max-width:var(--max); margin:0 auto; padding:0 24px; }
     .hero-eyebrow { display:inline-block; font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.75); border:1px solid rgba(255,255,255,.28); padding:5px 12px; border-radius:3px; margin-bottom:20px; }
-    .hero h1 { font-size:clamp(2rem,5vw,3.4rem); font-weight:800; line-height:1.1; letter-spacing:-.04em; color:#fff; max-width:580px; margin-bottom:18px; }
+    .hero h1 { font-size:clamp(2rem,5vw,3.4rem); font-weight:800; line-height:1.1; letter-spacing:-.04em; color:var(--text); max-width:580px; margin-bottom:18px; }
     .hero p { font-size:1.05rem; line-height:1.7; color:rgba(255,255,255,.80); max-width:460px; margin-bottom:32px; }
     .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
     .btn-primary { display:inline-flex; align-items:center; background:var(--green); color:#fff; padding:12px 24px; border-radius:6px; font-size:.88rem; font-weight:600; border:none; cursor:pointer; transition:background .15s; }
@@ -235,6 +235,7 @@
     </div>
   </header>
 
+  <main>
   <section class="hero">
     <img class="hero-img" src="/images/hero_home.webp" alt="Projet Pointe Est — Modulimo, Montréal" loading="lazy"/>
     <div class="hero-overlay"></div>
@@ -356,7 +357,7 @@
         </div>
         <p class="lf-hp" aria-hidden="true"><label>Ne pas remplir / Do not fill<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></p>
         <div class="lf-field">
-          <label class="lf-consent"><input type="checkbox" name="consent" required /><span><span>Je consens à ce que Modulimo inc. recueille et utilise les renseignements fournis (nom, courriel, message) afin de me contacter au sujet du projet Pointe Est. Je peux retirer mon consentement en tout temps en écrivant à contribution@modulimo.com.</span></span></label>
+          <label class="lf-consent" for="lf-consent"><input type="checkbox" id="lf-consent" name="consent" required /><span><span>Je consens à ce que Modulimo inc. recueille et utilise les renseignements fournis (nom, courriel, message) afin de me contacter au sujet du projet Pointe Est. Je peux retirer mon consentement en tout temps en écrivant à contribution@modulimo.com.</span></span></label>
         </div>
         <button type="submit" class="lf-submit">
           <span class="lf-label-idle"><span>Informez-moi</span></span>
@@ -373,6 +374,7 @@
       <p class="lf-more"><span>Prêt à aller plus loin ? <a href="/postuler/?building=a41b3b31-1681-4cb1-b54c-69486d27e132">Déposez votre candidature →</a></span></p>
     </form>
   </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-inner">
